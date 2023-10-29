@@ -29,7 +29,12 @@ const isDesktop = useMediaQuery("(min-width:1440px)")
           alt="header"
         />
       </SC.ImageCon>
-      {isDesktop ? <SC.Title>modern art gallery</SC.Title> : null}
+      {isDesktop ? (
+        <SC.Title>
+          moder<SC.GradLetter data-letter="n">n</SC.GradLetter> art gal
+          <span>lery</span>
+        </SC.Title>
+      ) : null}
       <SC.ContentCon>
         {!isDesktop ? <SC.Title>modern art gallery</SC.Title> : null}
         <SC.Paragraph>

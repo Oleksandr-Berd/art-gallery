@@ -21,6 +21,17 @@ export const HeaderStyled = styled.header`
     padding-bottom: 494px;
     padding-left: 165px;
     padding-right: 164px;
+
+    &::before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -5;
+        content: " ";
+        width: 450px;
+        height: 799px;
+        background-color: #151515;
+    }
   }
 `;
 
@@ -42,6 +53,13 @@ export const ImageCon = styled.div`
       width: 100%;
       height: 100%;
     }
+  }
+
+  @media (min-width: 1440px){
+    width: 540px;
+    height: 800px;
+
+    transform: translateX(410px);
   }
 `;
 
@@ -85,6 +103,11 @@ export const Title = styled.h1`
     margin: 0;
 
     font-size: 96px;
+    color: #fff;
+
+    & > span{
+        color: #151515;
+    }
   }
 `;
 
@@ -106,5 +129,22 @@ export const Paragraph = styled.p`
 
     font-size: 22px;
     line-height: 1.45;
+  }
+`;
+
+export const GradLetter = styled.span`
+  position: relative;
+  display: inline-block;
+  color: transparent;
+
+  &::before {
+    content: attr(data-letter);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    overflow: hidden;
+    color: white;
+    background-color: black;
   }
 `;
