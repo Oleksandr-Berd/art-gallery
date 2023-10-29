@@ -9,6 +9,12 @@ export const MainCon = styled.div`
     padding-left: 39px;
     padding-right: 40px;
   }
+
+  @media (min-width: 1440px) {
+    padding-left: 165px;
+    padding-right: 164px;
+    padding-bottom: 180px;
+  }
 `;
 
 export const FirstImgWrapper = styled.li`
@@ -28,6 +34,11 @@ export const FirstImgWrapper = styled.li`
 
     margin: 0;
   }
+
+  @media (min-width: 1440px) {
+    width: 635px;
+    height: 400px;
+  }
 `;
 
 export const SecondImgWrapper = styled.li`
@@ -41,7 +52,7 @@ export const SecondImgWrapper = styled.li`
     height: 100%;
   }
 
-  @media(min-width: 768px){
+  @media (min-width: 768px) {
     width: 398px;
     height: 720px;
 
@@ -61,7 +72,7 @@ export const ThirdImgWrapper = styled.li`
     height: 100%;
   }
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     width: 280px;
     height: 313px;
 
@@ -89,8 +100,13 @@ export const FirstContentWrapper = styled.li`
       margin-bottom: 24px;
     }
 
-    @media (min-width: 768px){
-        margin: 0;
+    @media (min-width: 1440px) {
+      width: 300px;
+
+      margin-bottom: 32px;
+
+      font-size: 60px;
+      line-height: 0.83;
     }
   }
 
@@ -100,6 +116,11 @@ export const FirstContentWrapper = styled.li`
     font-family: "Outfit";
     color: #444;
     font-weight: lighter;
+
+    @media (min-width: 1440px) {
+      font-size: 22px;
+      line-height: 1.45;
+    }
   }
 
   @media (min-width: 768px) {
@@ -107,6 +128,12 @@ export const FirstContentWrapper = styled.li`
 
     margin: 0;
     margin-right: 68px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 350px;
+
+    margin: 0;
   }
 `;
 
@@ -118,14 +145,14 @@ export const SecondContentWrapper = styled.li`
 
   background-color: #151515;
 
-@media (min-width: 768px){
+  @media (min-width: 768px) {
     width: 223px;
 
     padding-top: 85px;
     padding-bottom: 85px;
     padding-left: 29px;
     padding-right: 28px;
-}
+  }
 
   & > h2 {
     margin-bottom: 24px;
@@ -144,21 +171,24 @@ export const SecondContentWrapper = styled.li`
     line-height: 1.56;
     font-family: "Outfit";
     color: #fff;
-
   }
 `;
 
-export const InfoList = styled.ul`
- 
-`;
+export const InfoList = styled.ul``;
 
 export const FirstLevel = styled.div`
-display: flex;
-flex-direction: row;
-align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-margin-bottom: 11px;
-`
+  margin-bottom: 11px;
+
+  @media (min-width: 1440px) {
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+  }
+`;
 
 export const SecondLevel = styled.div`
   display: flex;

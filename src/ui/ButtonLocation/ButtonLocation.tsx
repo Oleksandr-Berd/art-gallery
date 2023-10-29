@@ -17,7 +17,6 @@ const path:string = location.pathname
           <SC.ArrowCon>
             <ArrowBack />
           </SC.ArrowCon>
-
           <SC.LinkCon>
             <a href="/">back to home</a>
           </SC.LinkCon>

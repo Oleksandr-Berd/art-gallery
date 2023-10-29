@@ -1,16 +1,38 @@
 import styled from "@emotion/styled";
 
-
 export const ButtonWrapper = styled.div`
-
   display: flex;
   flex-direction: row;
   align-items: center;
 
   margin-left: 16px;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     margin: 0;
+  }
+
+  @media (min-width: 1440px) {
+    & > div:first-child {
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    & > div:last-child {
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      & > div:first-child {
+        background-color: #d5966c;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      & > div:last-child {
+        background-color: #151515;
+        transition: background-color 0.3s ease-in-out;
+      }
+    }
   }
 `;
 
@@ -29,6 +51,30 @@ export const ButtonWrapperLocation = styled.div`
 
   @media (min-width: 768px) {
     transform: translateX(30px);
+  }
+
+  @media (min-width: 1440px) {
+    & > div:first-child {
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    & > div:last-child {
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      & > div:last-child {
+        background-color: #d5966c;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      & > div:first-child {
+        background-color: #151515;
+        transition: background-color 0.3s ease-in-out;
+      }
+    }
   }
 `;
 

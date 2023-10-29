@@ -5,15 +5,20 @@ import * as SC from "./InfoStyled";
 import infoPic1 from "../../assets/images/info_pic1.jpg";
 import infoPic2 from "../../assets/images/info_pic2.jpg";
 import infoPic3 from "../../assets/images/info_pic3.jpg";
-import infoPicTab1 from "../../assets/images/info_pic_tab1.jpg"
+import infoPicTab1 from "../../assets/images/info_pic_tab1.jpg";
 import infoPicTab2 from "../../assets/images/info_pic_tab2.jpg";
 import infoPicTab3 from "../../assets/images/info_pic_tab3.jpg";
+import infoPicDesk1 from "../../assets/images/info_pic_desk1.jpg"
+import infoPicDesk2 from "../../assets/images/info_pic_desk2.jpg"
+import infoPicDesk3 from "../../assets/images/info_pic_desk3.jpg"
+
 
 
 const Info: React.FC = () => {
   const isMobile = useMediaQuery("(min-width: 375px) and (max-width:767px)");
 
   const isTablet = useMediaQuery("(min-width: 768px) and (max-width:1439px)");
+  const isDesktop = useMediaQuery("(min-width:1440px)");
 
   return (
     <SC.MainCon>
@@ -44,7 +49,7 @@ const Info: React.FC = () => {
             </p>
           </SC.SecondContentWrapper>
         </ul>
-      ) : isTablet ? (
+      ) : isTablet || isDesktop ? (
         <SC.InfoList>
           <SC.FirstLevel>
             <SC.FirstContentWrapper>
@@ -56,16 +61,25 @@ const Info: React.FC = () => {
               </p>
             </SC.FirstContentWrapper>
             <SC.FirstImgWrapper>
-              <img src={infoPicTab1} alt="gallery one" />
+              <img
+                src={isTablet ? infoPicTab1 : infoPicDesk1}
+                alt="gallery one"
+              />
             </SC.FirstImgWrapper>
           </SC.FirstLevel>
           <SC.SecondLevel>
             <SC.SecondImgWrapper>
-              <img src={infoPicTab2} alt="gallery two" />
+              <img
+                src={isTablet ? infoPicTab2 : infoPicDesk2}
+                alt="gallery two"
+              />
             </SC.SecondImgWrapper>
             <div>
               <SC.ThirdImgWrapper>
-                <img src={infoPicTab3} alt="gallery three" />
+                <img
+                  src={isTablet ? infoPicTab3 : infoPicDesk3}
+                  alt="gallery three"
+                />
               </SC.ThirdImgWrapper>
               <SC.SecondContentWrapper>
                 <h2>COME & BE INSPIRED</h2>
