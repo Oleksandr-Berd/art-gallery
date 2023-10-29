@@ -3,9 +3,13 @@ import * as SC from "./SocNetListStyled"
 import {ReactComponent as FB} from "../../assets/images/fb.svg"
 import { ReactComponent as Insta } from "../../assets/images/insta.svg";
 import { ReactComponent as Twitter } from "../../assets/images/twitter.svg";
+import { useLocation } from "react-router-dom";
 
 
 const SocNetList:React.FC = () => {
+    const location = useLocation();
+
+    const path: string = location.pathname;
     return (
       <SC.SocNetList>
         <li>
@@ -14,7 +18,7 @@ const SocNetList:React.FC = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <FB />
+            <FB fill={path === "/location" ? "#151515" : "#fff"} />
           </a>
         </li>
         <li>
@@ -23,7 +27,7 @@ const SocNetList:React.FC = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Insta />
+            <Insta fill={path === "/location" ? "#151515" : "#fff"} />
           </a>
         </li>
         <li>
@@ -32,7 +36,7 @@ const SocNetList:React.FC = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Twitter />
+            <Twitter fill={path === "/location" ? "#151515" : "#fff"} />
           </a>
         </li>
       </SC.SocNetList>
