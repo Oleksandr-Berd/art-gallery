@@ -1,6 +1,22 @@
 import styled from "@emotion/styled";
 
+
 export const ButtonWrapper = styled.div`
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-left: 16px;
+`;
+
+export const ButtonWrapperLocation = styled.div`
+position: absolute;
+top: 0;
+left: 0;
+
+transform: translateX(-16px);
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -27,7 +43,6 @@ export const LinkCon = styled.div`
 `;
 
 export const ArrowCon = styled.div`
-
   padding-top: 21.25px;
   padding-bottom: 21.25px;
   padding-left: 24px;
