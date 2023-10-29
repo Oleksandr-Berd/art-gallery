@@ -15,17 +15,21 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const ButtonWrapperLocation = styled.div`
-position: absolute;
-top: 0;
-left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-transform: translateX(-16px);
+  transform: translateX(-16px);
 
   display: flex;
   flex-direction: row;
   align-items: center;
 
   margin-left: 16px;
+
+  @media (min-width: 768px) {
+    transform: translateX(30px);
+  }
 `;
 
 export const LinkCon = styled.div`

@@ -1,13 +1,23 @@
-import * as SC from "./InfoStyled"
+import { useMediaQuery } from "usehooks-ts";
 
-import infoPic1 from "../../assets/images/info_pic1.jpg"
+import * as SC from "./InfoStyled";
+
+import infoPic1 from "../../assets/images/info_pic1.jpg";
 import infoPic2 from "../../assets/images/info_pic2.jpg";
 import infoPic3 from "../../assets/images/info_pic3.jpg";
+import infoPicTab1 from "../../assets/images/info_pic_tab1.jpg"
+import infoPicTab2 from "../../assets/images/info_pic_tab2.jpg";
+import infoPicTab3 from "../../assets/images/info_pic_tab3.jpg";
 
 
-const Info:React.FC = () => {
-    return (
-      <SC.MainCon>
+const Info: React.FC = () => {
+  const isMobile = useMediaQuery("(min-width: 375px) and (max-width:767px)");
+
+  const isTablet = useMediaQuery("(min-width: 768px) and (max-width:1439px)");
+
+  return (
+    <SC.MainCon>
+      {isMobile ? (
         <ul>
           <SC.FirstImgWrapper>
             <img src={infoPic1} alt="gallery one" />
@@ -24,7 +34,7 @@ const Info:React.FC = () => {
             <img src={infoPic2} alt="gallery two" />
           </SC.SecondImgWrapper>
           <SC.ThirdImgWrapper>
-            <img src={infoPic3} alt="ga;;ery three" />
+            <img src={infoPic3} alt="gallery three" />
           </SC.ThirdImgWrapper>
           <SC.SecondContentWrapper>
             <h2>COME & BE INSPIRED</h2>
@@ -34,8 +44,42 @@ const Info:React.FC = () => {
             </p>
           </SC.SecondContentWrapper>
         </ul>
-      </SC.MainCon>
-    );
-}
- 
+      ) : isTablet ? (
+        <SC.InfoList>
+          <SC.FirstLevel>
+            <SC.FirstContentWrapper>
+              <h2>Your Day at the Gallery</h2>
+              <p>
+                Wander through our distinct collections and find new insights
+                about our artists. Dive into the details of their creative
+                process.
+              </p>
+            </SC.FirstContentWrapper>
+            <SC.FirstImgWrapper>
+              <img src={infoPicTab1} alt="gallery one" />
+            </SC.FirstImgWrapper>
+          </SC.FirstLevel>
+          <SC.SecondLevel>
+            <SC.SecondImgWrapper>
+              <img src={infoPicTab2} alt="gallery two" />
+            </SC.SecondImgWrapper>
+            <div>
+              <SC.ThirdImgWrapper>
+                <img src={infoPicTab3} alt="gallery three" />
+              </SC.ThirdImgWrapper>
+              <SC.SecondContentWrapper>
+                <h2>COME & BE INSPIRED</h2>
+                <p>
+                  We’re excited to welcome you to our gallery and see how our
+                  collections influence you.
+                </p>
+              </SC.SecondContentWrapper>
+            </div>
+          </SC.SecondLevel>
+        </SC.InfoList>
+      ) : null}
+    </SC.MainCon>
+  );
+};
+
 export default Info;

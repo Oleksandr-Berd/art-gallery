@@ -13,8 +13,10 @@ const path: string = location.pathname;
         <SC.ContentWrapper
           pathName={path === "/location" ? "location" : "home"}
         >
-          <h2>modern</h2>
-          <h2>art gallery</h2>
+          <div>
+            <h2>modern</h2>
+            <h2>art gallery</h2>
+          </div>
           <p>
             The Modern Art Gallery is free to all visitors and open seven days a
             week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
