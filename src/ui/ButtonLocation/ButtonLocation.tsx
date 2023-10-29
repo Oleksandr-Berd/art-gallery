@@ -7,7 +7,7 @@ import { ReactComponent as ArrowMob } from "../../assets/images/button_arrow_mob
 const ButtonLocation = () => {
   const location = useLocation();
 
-const path = location.pathname
+const path:string = location.pathname
 
   return (
     <SC.ButtonWrapper>
