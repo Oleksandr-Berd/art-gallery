@@ -1,7 +1,13 @@
 @font-face {
   font-family: "Shoulders";
   src: local("Shoulders"),
-    url("./assets/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf") format("truetype");
+    url("./assets/fonts/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: local("Outfit"),
+    url("./assets/fonts/Outfit/Outfit-VariableFont_wght.ttf") format("truetype");
 }
 
 body {
