@@ -8,6 +8,10 @@ export const ButtonWrapper = styled.div`
   align-items: center;
 
   margin-left: 16px;
+
+  @media (min-width: 768px){
+    margin: 0;
+  }
 `;
 
 export const ButtonWrapperLocation = styled.div`
