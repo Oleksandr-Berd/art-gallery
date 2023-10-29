@@ -13,6 +13,15 @@ export const HeaderStyled = styled.header`
     padding-bottom: 265px;
     padding-right: 40px;
   }
+
+  @media (min-width: 1440px) {
+    justify-content: space-between;
+
+    padding-top: 190px;
+    padding-bottom: 494px;
+    padding-left: 165px;
+    padding-right: 164px;
+  }
 `;
 
 export const ImageCon = styled.div`
@@ -62,12 +71,20 @@ export const Title = styled.h1`
   color: #151515;
 
   @media (min-width: 768px) {
-width: 285px;
+    width: 285px;
 
     margin-bottom: 48px;
 
     font-size: 70px;
     font-weight: bolder;
+  }
+
+  @media (min-width: 1440px) {
+    width: 390px;
+
+    margin: 0;
+
+    font-size: 96px;
   }
 `;
 
@@ -77,10 +94,17 @@ export const Paragraph = styled.p`
   line-height: 1.56;
   color: #444444;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     margin-bottom: 48px;
     font-size: 18px;
     line-height: 1.56;
     font-weight: lighter;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 64px;
+
+    font-size: 22px;
+    line-height: 1.45;
   }
 `;
