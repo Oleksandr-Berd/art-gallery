@@ -4,8 +4,6 @@ import * as SC from "./ButtonLocationStyled";
 
 import { ReactComponent as ArrowMob } from "../../assets/images/button_arrow_mob.svg";
 import { ReactComponent as ArrowBack } from "../../assets/images/ArrowBack.svg";
-import { ButtonWrapperLocation } from './ButtonLocationStyled';
-
 
 const ButtonLocation = () => {
   const location = useLocation();
