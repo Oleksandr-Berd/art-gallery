@@ -54,6 +54,8 @@ export const ButtonWrapperLocation = styled.div`
   }
 
   @media (min-width: 1440px) {
+    transform: translateX(130px);
+
     & > div:first-child {
       transition: background-color 0.3s ease-in-out;
     }

@@ -19,6 +19,13 @@ export const CommonCon = styled.div`
     align-items: flex-start;
     justify-content: space-between;
   }
+
+  @media (min-width: 1440px) {
+    padding-top: 104px;
+    padding-bottom: 128px;
+    padding-left: 165px;
+    padding-right: 165px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -35,6 +42,13 @@ export const Title = styled.h2`
 
     font-size: 55px;
   }
+
+  @media (min-width: 1440px) {
+    width: 300px;
+
+    font-size: 70px;
+    line-height: 1;
+  }
 `;
 
 export const Street = styled.p`
@@ -44,6 +58,12 @@ export const Street = styled.p`
   font-size: 32px;
   color: #d5966c;
   font-weight: bold;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 24px;
+
+    font-size: 36px;
+  }
 `;
 
 export const AddressWrapper = styled.div`
@@ -54,6 +74,13 @@ export const AddressWrapper = styled.div`
   font-family: "Outfit";
   line-height: 1.56;
   font-weight: lighter;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 32px;
+
+    font-size: 22px;
+    line-height: 1.45;
+  }
 `;
 
 export const Text = styled.p`
@@ -65,5 +92,12 @@ export const Text = styled.p`
 
   @media (min-width: 768px) {
     width: 398px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 540px;
+
+    font-size: 22px;
+    line-height: 1.45;
   }
 `;

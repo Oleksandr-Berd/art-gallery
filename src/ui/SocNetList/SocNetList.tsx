@@ -11,7 +11,7 @@ const SocNetList:React.FC = () => {
 
     const path: string = location.pathname;
     return (
-      <SC.SocNetList>
+      <SC.SocNetList pathName={path}>
         <li>
           <a
             href="https://www.facebook.com/sasha.berdichevsky"
