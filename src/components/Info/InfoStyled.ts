@@ -59,6 +59,13 @@ export const SecondImgWrapper = styled.li`
     margin: 0;
     margin-right: 11px;
   }
+
+  @media (min-width: 1440px){
+    width: 635px;
+    height: 720px;
+
+    margin-right: 30px;
+  }
 `;
 
 export const ThirdImgWrapper = styled.li`
@@ -78,6 +85,13 @@ export const ThirdImgWrapper = styled.li`
 
     margin: 0;
     margin-bottom: 11px;
+  }
+
+  @media (min-width: 1440px){
+    width: 445px;
+    height: 313px;
+
+    margin-bottom: 30px;
   }
 `;
 
@@ -154,6 +168,15 @@ export const SecondContentWrapper = styled.li`
     padding-right: 28px;
   }
 
+  @media (min-width: 1440px){
+    width: 350px;
+
+    padding-top: 65px;
+    padding-bottom: 64px;
+    padding-left: 48px;
+    padding-right: 47px;
+  }
+
   & > h2 {
     margin-bottom: 24px;
 
@@ -163,6 +186,14 @@ export const SecondContentWrapper = styled.li`
     font-size: 50px;
     line-height: 0.9;
     color: #fff;
+
+    @media (min-width: 1440px){
+
+        margin-bottom: 32px;
+
+        font-size: 60px;
+        line-height: 1;
+    }
   }
 
   & > p {
@@ -171,6 +202,11 @@ export const SecondContentWrapper = styled.li`
     line-height: 1.56;
     font-family: "Outfit";
     color: #fff;
+
+    @media (min-width: 1440px){
+        font-size: 22px;
+        line-height: 1.45;
+    }
   }
 `;
 
@@ -194,4 +230,8 @@ export const SecondLevel = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  @media (min-width: 1440px){
+    align-items: flex-start;
+  }
 `;
