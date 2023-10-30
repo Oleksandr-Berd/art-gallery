@@ -23,6 +23,15 @@ export const FooterStyled = styled.footer<PropsStyle>`
     padding-left: 39px;
     padding-right: 40px;
   }
+
+  @media (min-width: 1440px) {
+    justify-content: space-between;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 165px;
+    padding-right: 165px;
+  }
 `;
 
 export const ContentWrapper = styled.div<PropsStyle>`
@@ -34,6 +43,12 @@ export const ContentWrapper = styled.div<PropsStyle>`
 
     margin: 0;
     margin-right: 133px;
+
+    @media (min-width: 1440px) {
+      align-items: flex-start;
+
+      margin-right: 0;
+    }
   }
   & h2 {
     text-transform: uppercase;
@@ -45,6 +60,12 @@ export const ContentWrapper = styled.div<PropsStyle>`
       margin-right: 65px;
 
       font-size: 26px;
+    }
+
+    @media (min-width: 1440px){
+        margin-right: 140px;
+
+        font-size: 48px;
     }
   }
 
@@ -61,6 +82,13 @@ export const ContentWrapper = styled.div<PropsStyle>`
       width: 281px;
 
       margin: 0;
+    }
+
+    @media (min-width: 1440px){
+        width: 430px;
+
+        font-size: 18px;
+        line-height: 1.56;
     }
   }
 `;
